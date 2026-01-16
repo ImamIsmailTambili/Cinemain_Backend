@@ -25,13 +25,11 @@ connectDB();
 
 const app = express();
 
-const allowedOrigins = [
-  "https://cinemain-admin.vercel.app",
-  "https://cinemain.vercel.app/"
-];
-
 app.use(cors({
-  origin: allowedOrigins,
+  origin: [
+    "https://cinemain-admin.vercel.app",
+    "https://cinemain.vercel.app/"
+  ],
   credentials: true
 }));
 
