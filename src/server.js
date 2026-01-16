@@ -28,7 +28,7 @@ const app = express();
 app.use(cors({
   origin: [
     "https://cinemain-admin.vercel.app",
-    "cinemain-admin.up.railway.app"
+    "https://cinemain-admin.up.railway.app"
   ],
   credentials: true
 }));
