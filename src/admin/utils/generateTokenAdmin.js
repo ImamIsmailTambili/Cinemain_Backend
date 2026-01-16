@@ -7,8 +7,9 @@ export const generateTokenAdmin = (adminId, res) => {
     });
 
     res.cookie("jwt", token, {
-        secure: true,
-        sameSite: "none",
+        httpOnly: true,
+        secure: false,
+        sameSite: "strict",
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
