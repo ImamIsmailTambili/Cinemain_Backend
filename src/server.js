@@ -25,8 +25,13 @@ connectDB();
 
 const app = express();
 
+const allowedOrigins = [
+  "https://admin-cinemain.up.railway.app",
+  "https://user-cinemain.up.railway.app"
+];
+
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: allowedOrigins,
   credentials: true
 }));
 
