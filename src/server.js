@@ -26,8 +26,8 @@ connectDB();
 const app = express();
 
 const allowedOrigins = [
-  "https://admin-cinemain.up.railway.app",
-  "https://user-cinemain.up.railway.app"
+  "https://cinemain-admin.vercel.app",
+  "https://cinemain.vercel.app/"
 ];
 
 app.use(cors({
