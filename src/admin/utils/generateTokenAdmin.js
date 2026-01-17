@@ -10,6 +10,7 @@ export const generateTokenAdmin = (adminId, res) => {
         httpOnly: true,
         secure: true,
         sameSite: "none",
+        domain: ".up.railway.app",
         maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
     });
 
