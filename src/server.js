@@ -29,7 +29,7 @@ app.use(cors({
   origin: [
     "https://cinemain-admin.up.railway.app",
     "https://cinemain.up.railway.app",
-  ]
+  ],
   credentials: true
 }));
 
